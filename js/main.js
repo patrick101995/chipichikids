@@ -82,7 +82,7 @@ const pintarCards = cards => {
         cardItems.querySelector('h5').textContent = producto.itemPrice
         cardItems.querySelector('img').setAttribute('src', producto.img)
         cardItems.querySelector('.btn-dark').dataset.id = producto.id
-        cardItems.querySelector('#card-title1').href = "itemsIndividual/itemsIndividual.html"
+        cardItems.querySelector('#card-title1').href = "https://patrick101995.github.io/chipichikids/itemsIndividual/itemsIndividual.html"
         const clone = cardItems.cloneNode(true)
         fragment.appendChild(clone)
     })
