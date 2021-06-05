@@ -1,0 +1,60 @@
+
+
+[
+  {
+  "itemName": "Botas de lluvia",
+  "itemPrice": 40,
+  "id": 1,
+  "img": "chipikids/calzado/botas-lluvia.jpg"
+  },
+  {
+  "itemName": "Musculosa",
+  "itemPrice": 4330,
+  "id": 2,
+  "img": "chipikids/franela/IMG-20210512-WA0004.jpg"
+  },
+  {
+    "itemName": "Pijama",
+    "itemPrice": 3300,
+    "id": 3,
+    "img": "chipikids/pijama/IMG-20210512-WA0018.jpg"
+  },
+  {
+    "itemName": "Traje de baño y Toalla",
+    "itemPrice": 1900,
+    "id": 4,
+    "img": "chipikids/traje de baño y toalla/IMG-20210512-WA0007.jpg"
+  },
+  {
+    "itemName": "Remera 5",
+    "itemPrice": 4700,
+    "id": 5,
+    "img": "chipikids/franela/IMG-20210512-WA0027.jpg"
+  },
+  {
+    "itemName": "Combo Remera y Pantalon",
+    "itemPrice": 3000,
+    "id": 6,
+    "img": "chipikids/franela y mono/IMG-20210512-WA0026.jpg"
+  },
+  {
+    "itemName": "Vestido Blanco",
+    "itemPrice": 2700,
+    "id": 7,
+    "img": "chipikids/vestidos/IMG-20210511-WA0042.jpg"
+  },
+  {
+    "itemName": "Vestido Negro",
+    "itemPrice": 2800,
+    "id": 8,
+    "img": "chipikids/vestidos/IMG-20210511-WA0041.jpg"
+  },
+  {
+    "itemName": "Leggins",
+    "itemPrice": 1700,
+    "id": 9,
+    "img": "chipikids/leggins/IMG-20210512-WA0023.jpg"
+  }
+
+]
+

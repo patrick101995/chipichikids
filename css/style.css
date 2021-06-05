@@ -1,0 +1,22 @@
+.navbar_s {
+  background-color: #f88fa1;
+}
+
+.iconoCarrito {
+  size: 10px;
+  color: white;
+  justify-content: end;
+  text-decoration: none;
+  margin-right: 10em;
+}
+
+.carrito {
+  display: flex;
+}
+
+body {
+  background-image: url(/Chipikids/background.jpg), url(/Chipikids/background.jpg);
+  background-repeat: repeat-y, repeat-y;
+  background-position: 0% 0%, 100% 50%;
+  background-size: 4em;
+}

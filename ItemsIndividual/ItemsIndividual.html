@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Shop Item - Start Bootstrap Template</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/shop-item.css" rel="stylesheet">
+
+    <!-- FRONTAWESOME CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+</head>
+
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar_s">
+  <div class="container">
+    <a class="navbar-brand" href="#">Chipikids</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto flex" id="navbar">
+        <li class="nav-item active">
+          <a class="nav-link" href="/index.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/SPA nav bar/spa.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/SPA nav bar/spa.html">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/SPA nav bar/spa.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="d-flex carrito">
+    <i class="fas fa-shopping-cart iconoCarrito d-block btn btn-primary" id="cantidadCarrito"
+      data-target="#modalCarrito" data-toggle="modal">
+      <span>0</span>
+      <div> </div>
+    </i>
+  </div>
+</nav>
+<!--------------------------- Modal Carrito -------------------------------------->
+
+<div class="modal fade" id="modalCarrito" tabindex="-1" role="dialog" aria-labelledby="modalCarrito" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCarrito">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="producto-carrito">
+        Hola!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Comprar</button>
+        <button type="button" class="btn btn-danger" id="vaciarCarrito">Vaciar Carrito</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--------------------------- Fin Modal Carrito -------------------------------------->
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!--       <div class="col-lg-3"> -->
+      <!--         <h1 class="my-4">Shop Name</h1>
+        <div class="list-group">
+          <a href="#" class="list-group-item active">Category 1</a>
+          <a href="#" class="list-group-item">Category 2</a>
+          <a href="#" class="list-group-item">Category 3</a>
+        </div> -->
+
+      <!--       </div> -->
+      <!-- /.col-lg-3 -->
+      <div class="col-lg-12">
+        <div class="col-lg-12">
+          <div id="item-carrito">
+          </div>
+          <div class="card mt-4" id="item">
+            
+          </div>
+      </div>
+
+
+
+
+        <!-- /.card -->
+
+        <div class="card card-outline-secondary my-4">
+          <div class="card-header">
+            Product Reviews
+          </div>
+          <div class="card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique
+              necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia,
+              necessitatibus quae sint natus.</p>
+            <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique
+              necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia,
+              necessitatibus quae sint natus.</p>
+            <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique
+              necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia,
+              necessitatibus quae sint natus.</p>
+            <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+            <hr>
+            <!-- <a href="#" class="btn btn-dark">Agregar al Carrito</a> -->
+          </div>
+        </div>
+        <!-- /.card -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- Templates -->
+  <!-- Template Card -->
+  <template id="template-card">
+    <img class="card-img-top img-fluid" id="imagen-carrito" src="http://placehold.it/900x400" alt="">
+    <div class="card-body">
+      <h3 class="card-title">Product Name</h3>
+      <h4>$24.99</h4>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic
+        aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis
+        molestias iure, ducimus!</p>
+      <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+      4.0 stars
+    </div>
+    <button class="btn btn-dark" data-id="">Agregar al Carrito</buttonclass=>
+  </template>
+
+  <!-- Template Carrito -->
+  <template id="template-card-carrito">
+    <div class="card">
+      <div class="card-body">
+        <h6 class="d-none">id</h6>
+        <h4 class="card-title">
+          <a href="#" class="card-title">Item Name</a>
+        </h4>
+        <div>
+          <h6 class="text-right d-inline">Cantidad</h6>
+          <button class="btn btn-sm btn-outline-info">+</button>
+          <button class="btn btn-outline-danger btn-sm">-</button>
+          <h6 class="float-right d-inline">Cantidad</h6>
+        </div>
+        <br>
+        <h5 class="d-inline">Total</h5>
+        <h5 class="d-inline">Precio del item</h5>
+      </div>
+    </div>
+  </template>
+
+  <script src="js/HTMLdinamico.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

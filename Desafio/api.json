@@ -1,0 +1,54 @@
+
+
+[
+  {
+  "itemName": "Botas",
+  "itemPrice": 40,
+  "id": 1,
+  "img": "chipikids/calzado/botas-lluvia.jpg"
+  },
+  {
+  "itemName": "Remera 1",
+  "itemPrice": 4330,
+  "id": 2,
+  "img": "chipikids/franela/IMG-20210512-WA0004.jpg"
+  },
+  {
+    "itemName": "Sombrero",
+    "itemPrice": 2300,
+    "id": 3,
+    "img": "imagenes/imagen1.jpeg"
+  },
+  {
+    "itemName": "Remera 2",
+    "itemPrice": 2700,
+    "id": 4,
+    "img": "chipikids/franela/IMG-20210512-WA0002.jpg"
+  },
+  {
+    "itemName": "Remera 5",
+    "itemPrice": 4700,
+    "id": 5,
+    "img": "chipikids/franela/IMG-20210512-WA0003.jpg"
+  },
+  {
+    "itemName": "Remera 5",
+    "itemPrice": 4700,
+    "id": 5,
+    "img": "chipikids/franela/IMG-20210512-WA0003.jpg"
+  },
+  {
+    "itemName": "Remera 5",
+    "itemPrice": 4700,
+    "id": 5,
+    "img": "chipikids/franela/IMG-20210512-WA0003.jpg"
+  },
+  {
+    "itemName": "Remera 5",
+    "itemPrice": 4700,
+    "id": 5,
+    "img": "chipikids/franela/IMG-20210512-WA0003.jpg"
+  }
+
+]
+
