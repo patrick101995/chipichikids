@@ -88,21 +88,18 @@ const pintarCards = cards => {
 
 // Listener JQuery
 
- $("#mayor").click(function (e) {
-    console.log('jquery')
+$("#mayor").click(function (e) {
     botonOrdenarMayor(item, e)
 })
 
 //Event listeners para el boton de comprar
 
 navbar.addEventListener('click', e => {
-    console.log(e.target.textContent)
     setSpa(e)
 })
 
 
 items.addEventListener('click', e => {
-    console.log(e.target)
     itemsIndividual(e)
     addCarrito(e)
     candidadCarritoIcono(e)
@@ -125,12 +122,11 @@ vaciarCarritoId.addEventListener('click', e => {
 
 botonesOrdenar.addEventListener('click', e => {
     if (e.target.classList.contains('menor')) {
-        console.log(e.target.classList.contains('menor'))
         botonOrdenarMenor(item, e)
     }
-/*     if(e.target.classList.contains('mayor')){
-            botonOrdenarMayor (item, e)
-        } */
+    /*     if(e.target.classList.contains('mayor')){
+                botonOrdenarMayor (item, e)
+            } */
     if (e.target.classList.contains('nombre')) {
         botonOrdenarNombre(item, e)
     }
@@ -307,10 +303,10 @@ const setSpa = e => {
     switch (spa) {
         case "Nosotros":
             sessionStorage.setItem('spa', 'nosotros')
-        break;
+            break;
         case "Contacto":
             sessionStorage.setItem('spa', 'contacto')
-        break;
+            break;
     }
 }
 
@@ -383,23 +379,21 @@ function botonOrdenarNombre(Arr, e) {
 
 //Buscador
 
-function buscador (){
-    console.log(buscar.value)
+function buscador() {
     let newCards = []
-    Object.values(item).forEach(producto =>{
+    Object.values(item).forEach(producto => {
         let nombre = producto.itemName.toLowerCase();
-            if(nombre.indexOf(buscar.value) !== -1){
-                const objeto ={
-                    id: producto.id,
-                    itemName: producto.itemName,
-                    itemPrice: producto.itemPrice,
-                    img: producto.img
-                    }
-                    newCards.push(objeto)
-            }       
+        if (nombre.indexOf(buscar.value) !== -1) {
+            const objeto = {
+                id: producto.id,
+                itemName: producto.itemName,
+                itemPrice: producto.itemPrice,
+                img: producto.img
+            }
+            newCards.push(objeto)
+        }
         pintarCards(newCards)
     })
 }
 
 // Fin Buscador
-

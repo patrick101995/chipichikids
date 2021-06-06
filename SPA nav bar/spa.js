@@ -22,7 +22,6 @@ let carrito = {
 
 document.addEventListener('DOMContentLoaded', () => {
   page = sessionStorage.getItem('spa')
-  console.log(page)
   setContenido(page)
   pintarContenido(template)
   checkLocalStorage()
@@ -58,7 +57,6 @@ function checkLocalStorage() {
 
 //Event listeners
 navbar.addEventListener('click', e => {
-  console.log(e.target.textContent)
   setSpa(e)
 })
 
@@ -69,7 +67,6 @@ itemCarrito.addEventListener('click', e => {
 
 
 navbar.addEventListener('click', e => {
-  console.log(e.target.textContent)
   setSpa(e)
 })
 
@@ -90,7 +87,6 @@ function vaciarCarritoBtn() {
 
 
 function setContenido(page) {
-  console.log(page)
   template = ''
   switch (page) {
     case 'contacto':
@@ -116,7 +112,6 @@ const pintarContenido = template => {
 //Formulario de contacto
 
 function enviarFormulario() {
-  console.log('Enviando Formulario...')
 
   error.style.color = 'red';
 

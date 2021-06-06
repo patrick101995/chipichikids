@@ -53,13 +53,11 @@ itemCarrito.addEventListener('click', e => {
 
 
 navbar.addEventListener('click', e => {
-    console.log(e.target.textContent)
     setSpa(e)
 })
 
 
 item.addEventListener('click', e => {
-    console.log(e.target)
     addCarrito(e)
     candidadCarritoIcono(e)
 })
