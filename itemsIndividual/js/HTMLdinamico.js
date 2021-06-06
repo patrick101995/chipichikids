@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     vaciarCarritoBtn(localStorage)
     pintarCarrito(carrito)
     candidadCarritoIcono()
-    
+
 })
 
 //Check local storage
