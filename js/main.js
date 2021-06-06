@@ -1,14 +1,6 @@
 //              Variables y Constantes
 
 // Constantes
-const product1 = new Product('Botas', 40, 1, 'chipikids/calzado/botas-lluvia.jpg');
-const product2 = new Product('Sombrero', 2300, 2, 'imagenes/imagen1.jpeg');
-const product3 = new Product('Zapatos', 7800, 3, 'imagenes/imagen2.jpeg');
-const product4 = new Product('Remera Blanca', 1000, 4, 'imagenes/imagen3.jpeg');
-const product5 = new Product('Calcetines', 500, 5, 'imagenes/imagen4.jpeg');
-const product6 = new Product('Short', 2400, 6, 'imagenes/imagen5.jpeg');
-const product7 = new Product('Musculosa', 1500, 7, 'imagenes/imagen6.jpeg');
-const product8 = new Product('Camisa', 6000, 8, 'chipikids/franela/IMG-20210512-WA0003');
 const items = document.getElementById('producto')
 const vaciarCarritoId = document.getElementById('vaciarCarrito')
 const itemsCarrito = document.getElementById('producto-carrito')
@@ -411,20 +403,3 @@ function buscador (){
 
 // Fin Buscador
 
-
-
-//Construct
-
-function Product(itemName, itemPrice, id, img) {
-    this.itemName = itemName;
-    this.itemPrice = parseFloat(itemPrice);
-    this.id = id;
-    this.img = img;
-
-    //suma iva
-    this.sumaIva = function () {
-        let iva = this.price * 0.21;
-        this.price += iva;
-        alert(this.price)
-    }
-}
