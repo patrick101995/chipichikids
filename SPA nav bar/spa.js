@@ -134,19 +134,14 @@ function enviarFormulario() {
     mensajesError.push('Debes ingresar al menos un metodo de contacto')
   }
 
-  error.innerHTML = mensajesError.join(', ')
-
   if (mensajesError.length === 0) {
-    console.log('no hay errores')
-    enviadoExito()
+    error.style.color = 'green';
+    mensajesError.push('Formulario enviado con exito')
   }
-
+  error.innerHTML = mensajesError.join(', ')
   return false
 }
 
-function enviadoExito() {
-
-}
 
 
 
